@@ -25,47 +25,15 @@ Content-Disposition: form-data; name="_CBGPStatusIndexExport_state"
 ------WebKitFormBoundary8PcXs5k5qh0d3ZHo
 Content-Disposition: form-data; name="TFTemp"
 
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="ComboBox1"
-
-20
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="_ComboBox1_state"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="__VIEWSTATEGENERATOR"
-
-428F5E74
 ------WebKitFormBoundary8PcXs5k5qh0d3ZHo
 Content-Disposition: form-data; name="CBStatus"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="_CBStatus_state"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="FUFStatusPDF"; filename=""
-Content-Type: application/octet-stream
-
 
 ------WebKitFormBoundary8PcXs5k5qh0d3ZHo
 Content-Disposition: form-data; name="CBQuotes"
 
 
 ------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="_CBQuotes_state"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
 Content-Disposition: form-data; name="CBDelimiter"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="_CBDelimiter_state"
-
 
 ------WebKitFormBoundary8PcXs5k5qh0d3ZHo
 Content-Disposition: form-data; name="App.RGPdfPageSize_Group"
