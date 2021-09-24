@@ -71,58 +71,7 @@ Content-Disposition: form-data; name="_CBDelimiter_state"
 Content-Disposition: form-data; name="App.RGPdfPageSize_Group"
 
 A4
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="App.RGPdfOrientation_Group"
 
-portrait
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="HFQuerySCurve1"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="App.RGSCurve_Group"
-
-7
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="HFQuerySCurve2"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="App.RGSCurve2_Group"
-
-7
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="HFQuerySCurve3"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="App.RGSCurve3_Group"
-
-7
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="MassPrintOutputFormat"
-
-.pdf
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="MassPrintOutputFormat"
-
-.pdf
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="MassPrintOutputFormat"
-
-.pdf
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="GPStatusIndexSM"
-
-
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="__EVENTTARGET"
-
-ResourceManager1
-------WebKitFormBoundary8PcXs5k5qh0d3ZHo
-Content-Disposition: form-data; name="__EVENTARGUMENT"
-
--|public|DMExportData
 ------WebKitFormBoundary8PcXs5k5qh0d3ZHo
 Content-Disposition: form-data; name="submitDirectEventConfig"
 
