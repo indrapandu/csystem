@@ -1,0 +1,134 @@
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="TFStatusIndexSQL"
+
+ SELECT TDCertPROJAcceptance.[CertificateNo] AS 'KEYFIELD_635',TDCertPROJAcceptance.[CertificateDescription] AS 'DESCFIELD_636',TDCertPROJAcceptance.[SystemNo] AS 'SystemNo_637',TDCertPROJAcceptance.[SystemDescription] AS 'SystemDescription_638',TDCertPROJAcceptance.[SubSystemNo] AS 'SubSystemNo_639',TDCertPROJAcceptance.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertPROJAcceptance.[Discipline] AS 'Discipline_641',TTS_TDCertPROJAcceptance.[Description] AS 'STATUSFIELD_794',CONTHProject.[ConnectedOn] AS 'ConnectedOn_643',TDCertPROJAcceptance.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertPROJAcceptance.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN TDCertPROJAcceptance ON ConTHProject.[ChildTable] = 'TDCertPROJAcceptance' and ConTHProject.[Child_ID] = TDCertPROJAcceptance.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertPROJAcceptance] ON TTS_TDCertPROJAcceptance.[StatusCode] = TDCertPROJAcceptance.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertPROJAcceptance.[TTable_ID] = 596 AND  TT1.[TableName] = 'TDCertPROJAcceptance' AND TDCertPROJAcceptance.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertPROJPSSR.[CertificateNo] AS 'KEYFIELD_635',TDCertPROJPSSR.[CertificateDescription] AS 'DESCFIELD_636',TDCertPROJPSSR.[SystemNo] AS 'SystemNo_637',TDCertPROJPSSR.[SystemDescription] AS 'SystemDescription_638',TDCertPROJPSSR.[SubSystemNo] AS 'SubSystemNo_639',TDCertPROJPSSR.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertPROJPSSR.[Discipline] AS 'Discipline_641',TTS_TDCertPROJPSSR.[Description] AS 'STATUSFIELD_794',CONTHProject.[ConnectedOn] AS 'ConnectedOn_643',TDCertPROJPSSR.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertPROJPSSR.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN TDCertPROJPSSR ON ConTHProject.[ChildTable] = 'TDCertPROJPSSR' and ConTHProject.[Child_ID] = TDCertPROJPSSR.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertPROJPSSR] ON TTS_TDCertPROJPSSR.[StatusCode] = TDCertPROJPSSR.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertPROJPSSR.[TTable_ID] = 595 AND  TT1.[TableName] = 'TDCertPROJPSSR'  AND TDCertPROJPSSR.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertPROJRHIC.[CertificateNo] AS 'KEYFIELD_635',TDCertPROJRHIC.[CertificateDescription] AS 'DESCFIELD_636',TDCertPROJRHIC.[SystemNo] AS 'SystemNo_637',TDCertPROJRHIC.[SystemDescription] AS 'SystemDescription_638',TDCertPROJRHIC.[SubSystemNo] AS 'SubSystemNo_639',TDCertPROJRHIC.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertPROJRHIC.[Discipline] AS 'Discipline_641',TTS_TDCertPROJRHIC.[Description] AS 'STATUSFIELD_794',CONTHProject.[ConnectedOn] AS 'ConnectedOn_643',TDCertPROJRHIC.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertPROJRHIC.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN TDCertPROJRHIC ON ConTHProject.[ChildTable] = 'TDCertPROJRHIC' and ConTHProject.[Child_ID] = TDCertPROJRHIC.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertPROJRHIC] ON TTS_TDCertPROJRHIC.[StatusCode] = TDCertPROJRHIC.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertPROJRHIC.[TTable_ID] = 591 AND  TT1.[TableName] = 'TDCertPROJRHIC'  AND TDCertPROJRHIC.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertPROJTOC.[CertificateNo] AS 'KEYFIELD_635',TDCertPROJTOC.[CertificateDescription] AS 'DESCFIELD_636',TDCertPROJTOC.[SystemNo] AS 'SystemNo_637',TDCertPROJTOC.[SystemDescription] AS 'SystemDescription_638',TDCertPROJTOC.[SubSystemNo] AS 'SubSystemNo_639',TDCertPROJTOC.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertPROJTOC.[Discipline] AS 'Discipline_641',TTS_TDCertPROJTOC.[Description] AS 'STATUSFIELD_794',CONTHProject.[ConnectedOn] AS 'ConnectedOn_643',TDCertPROJTOC.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertPROJTOC.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN TDCertPROJTOC ON ConTHProject.[ChildTable] = 'TDCertPROJTOC' and ConTHProject.[Child_ID] = TDCertPROJTOC.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertPROJTOC] ON TTS_TDCertPROJTOC.[StatusCode] = TDCertPROJTOC.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertPROJTOC.[TTable_ID] = 610 AND  TT1.[TableName] = 'TDCertPROJTOC'  AND TDCertPROJTOC.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertSYSPSSR.[CertificateNo] AS 'KEYFIELD_635',TDCertSYSPSSR.[CertificateDescription] AS 'DESCFIELD_636',TDCertSYSPSSR.[SystemNo] AS 'SystemNo_637',TDCertSYSPSSR.[SystemDescription] AS 'SystemDescription_638',TDCertSYSPSSR.[SubSystemNo] AS 'SubSystemNo_639',TDCertSYSPSSR.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertSYSPSSR.[Discipline] AS 'Discipline_641',TTS_TDCertSYSPSSR.[Description] AS 'STATUSFIELD_794',CONTHSystem.[ConnectedOn] AS 'ConnectedOn_643',TDCertSYSPSSR.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertSYSPSSR.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN THSystem ON ConTHProject.[ChildTable] = 'THSystem' and ConTHProject.[Child_ID] = THSystem.ID  INNER JOIN ConTHSystem ON ConTHSystem.[ParentTable] = 'THSystem' and ConTHSystem.[Parent_ID] = THSystem.ID  INNER JOIN TDCertSYSPSSR ON ConTHSystem.[ChildTable] = 'TDCertSYSPSSR' and ConTHSystem.[Child_ID] = TDCertSYSPSSR.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertSYSPSSR] ON TTS_TDCertSYSPSSR.[StatusCode] = TDCertSYSPSSR.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertSYSPSSR.[TTable_ID] = 590 AND  TT1.[TableName] = 'TDCertSYSPSSR'  AND TDCertSYSPSSR.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertSYSRFSU.[CertificateNo] AS 'KEYFIELD_635',TDCertSYSRFSU.[CertificateDescription] AS 'DESCFIELD_636',TDCertSYSRFSU.[SystemNo] AS 'SystemNo_637',TDCertSYSRFSU.[SystemDescription] AS 'SystemDescription_638',TDCertSYSRFSU.[SubSystemNo] AS 'SubSystemNo_639',TDCertSYSRFSU.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertSYSRFSU.[Discipline] AS 'Discipline_641',TTS_TDCertSYSRFSU.[Description] AS 'STATUSFIELD_794',CONTHSystem.[ConnectedOn] AS 'ConnectedOn_643',TDCertSYSRFSU.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertSYSRFSU.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN THSystem ON ConTHProject.[ChildTable] = 'THSystem' and ConTHProject.[Child_ID] = THSystem.ID  INNER JOIN ConTHSystem ON ConTHSystem.[ParentTable] = 'THSystem' and ConTHSystem.[Parent_ID] = THSystem.ID  INNER JOIN TDCertSYSRFSU ON ConTHSystem.[ChildTable] = 'TDCertSYSRFSU' and ConTHSystem.[Child_ID] = TDCertSYSRFSU.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertSYSRFSU] ON TTS_TDCertSYSRFSU.[StatusCode] = TDCertSYSRFSU.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertSYSRFSU.[TTable_ID] = 589 AND  TT1.[TableName] = 'TDCertSYSRFSU'  AND TDCertSYSRFSU.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertSYSSCCC.[CertificateNo] AS 'KEYFIELD_635',TDCertSYSSCCC.[CertificateDescription] AS 'DESCFIELD_636',TDCertSYSSCCC.[SystemNo] AS 'SystemNo_637',TDCertSYSSCCC.[SystemDescription] AS 'SystemDescription_638',TDCertSYSSCCC.[SubSystemNo] AS 'SubSystemNo_639',TDCertSYSSCCC.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertSYSSCCC.[Discipline] AS 'Discipline_641',TTS_TDCertSYSSCCC.[Description] AS 'STATUSFIELD_794',CONTHSystem.[ConnectedOn] AS 'ConnectedOn_643',TDCertSYSSCCC.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertSYSSCCC.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN THSystem ON ConTHProject.[ChildTable] = 'THSystem' and ConTHProject.[Child_ID] = THSystem.ID  INNER JOIN ConTHSystem ON ConTHSystem.[ParentTable] = 'THSystem' and ConTHSystem.[Parent_ID] = THSystem.ID  INNER JOIN TDCertSYSSCCC ON ConTHSystem.[ChildTable] = 'TDCertSYSSCCC' and ConTHSystem.[Child_ID] = TDCertSYSSCCC.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertSYSSCCC] ON TTS_TDCertSYSSCCC.[StatusCode] = TDCertSYSSCCC.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertSYSSCCC.[TTable_ID] = 587 AND  TT1.[TableName] = 'TDCertSYSSCCC'  AND TDCertSYSSCCC.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertSYSSHOC.[CertificateNo] AS 'KEYFIELD_635',TDCertSYSSHOC.[CertificateDescription] AS 'DESCFIELD_636',TDCertSYSSHOC.[SystemNo] AS 'SystemNo_637',TDCertSYSSHOC.[SystemDescription] AS 'SystemDescription_638',TDCertSYSSHOC.[SubSystemNo] AS 'SubSystemNo_639',TDCertSYSSHOC.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertSYSSHOC.[Discipline] AS 'Discipline_641',TTS_TDCertSYSSHOC.[Description] AS 'STATUSFIELD_794',CONTHSystem.[ConnectedOn] AS 'ConnectedOn_643',TDCertSYSSHOC.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertSYSSHOC.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN THSystem ON ConTHProject.[ChildTable] = 'THSystem' and ConTHProject.[Child_ID] = THSystem.ID  INNER JOIN ConTHSystem ON ConTHSystem.[ParentTable] = 'THSystem' and ConTHSystem.[Parent_ID] = THSystem.ID  INNER JOIN TDCertSYSSHOC ON ConTHSystem.[ChildTable] = 'TDCertSYSSHOC' and ConTHSystem.[Child_ID] = TDCertSYSSHOC.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertSYSSHOC] ON TTS_TDCertSYSSHOC.[StatusCode] = TDCertSYSSHOC.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertSYSSHOC.[TTable_ID] = 588 AND  TT1.[TableName] = 'TDCertSYSSHOC'  AND TDCertSYSSHOC.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertSSYSDSCCC.[CertificateNo] AS 'KEYFIELD_635',TDCertSSYSDSCCC.[CertificateDescription] AS 'DESCFIELD_636',TDCertSSYSDSCCC.[SystemNo] AS 'SystemNo_637',TDCertSSYSDSCCC.[SystemDescription] AS 'SystemDescription_638',TDCertSSYSDSCCC.[SubSystemNo] AS 'SubSystemNo_639',TDCertSSYSDSCCC.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertSSYSDSCCC.[Discipline] AS 'Discipline_641',TTS_TDCertSSYSDSCCC.[Description] AS 'STATUSFIELD_794',CONTHSubSystem.[ConnectedOn] AS 'ConnectedOn_643',TDCertSSYSDSCCC.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertSSYSDSCCC.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN THSystem ON ConTHProject.[ChildTable] = 'THSystem' and ConTHProject.[Child_ID] = THSystem.ID  INNER JOIN ConTHSystem ON ConTHSystem.[ParentTable] = 'THSystem' and ConTHSystem.[Parent_ID] = THSystem.ID  INNER JOIN THSubSystem ON ConTHSystem.[ChildTable] = 'THSubSystem' and ConTHSystem.[Child_ID] = THSubSystem.ID  INNER JOIN ConTHSubSystem ON ConTHSubSystem.[ParentTable] = 'THSubSystem' and ConTHSubSystem.[Parent_ID] = THSubSystem.ID  INNER JOIN TDCertSSYSDSCCC ON ConTHSubSystem.[ChildTable] = 'TDCertSSYSDSCCC' and ConTHSubSystem.[Child_ID] = TDCertSSYSDSCCC.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertSSYSDSCCC] ON TTS_TDCertSSYSDSCCC.[StatusCode] = TDCertSSYSDSCCC.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertSSYSDSCCC.[TTable_ID] = 582 AND  TT1.[TableName] = 'TDCertSSYSDSCCC'  AND TDCertSSYSDSCCC.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertSSYSLUN.[CertificateNo] AS 'KEYFIELD_635',TDCertSSYSLUN.[CertificateDescription] AS 'DESCFIELD_636',TDCertSSYSLUN.[SystemNo] AS 'SystemNo_637',TDCertSSYSLUN.[SystemDescription] AS 'SystemDescription_638',TDCertSSYSLUN.[SubSystemNo] AS 'SubSystemNo_639',TDCertSSYSLUN.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertSSYSLUN.[Discipline] AS 'Discipline_641',TTS_TDCertSSYSLUN.[Description] AS 'STATUSFIELD_794',CONTHSubSystem.[ConnectedOn] AS 'ConnectedOn_643',TDCertSSYSLUN.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertSSYSLUN.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN THSystem ON ConTHProject.[ChildTable] = 'THSystem' and ConTHProject.[Child_ID] = THSystem.ID  INNER JOIN ConTHSystem ON ConTHSystem.[ParentTable] = 'THSystem' and ConTHSystem.[Parent_ID] = THSystem.ID  INNER JOIN THSubSystem ON ConTHSystem.[ChildTable] = 'THSubSystem' and ConTHSystem.[Child_ID] = THSubSystem.ID  INNER JOIN ConTHSubSystem ON ConTHSubSystem.[ParentTable] = 'THSubSystem' and ConTHSubSystem.[Parent_ID] = THSubSystem.ID  INNER JOIN TDCertSSYSLUN ON ConTHSubSystem.[ChildTable] = 'TDCertSSYSLUN' and ConTHSubSystem.[Child_ID] = TDCertSSYSLUN.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertSSYSLUN] ON TTS_TDCertSSYSLUN.[StatusCode] = TDCertSSYSLUN.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertSSYSLUN.[TTable_ID] = 584 AND  TT1.[TableName] = 'TDCertSSYSLUN'  AND TDCertSSYSLUN.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertSSYSSSCCC.[CertificateNo] AS 'KEYFIELD_635',TDCertSSYSSSCCC.[CertificateDescription] AS 'DESCFIELD_636',TDCertSSYSSSCCC.[SystemNo] AS 'SystemNo_637',TDCertSSYSSSCCC.[SystemDescription] AS 'SystemDescription_638',TDCertSSYSSSCCC.[SubSystemNo] AS 'SubSystemNo_639',TDCertSSYSSSCCC.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertSSYSSSCCC.[Discipline] AS 'Discipline_641',TTS_TDCertSSYSSSCCC.[Description] AS 'STATUSFIELD_794',CONTHSubSystem.[ConnectedOn] AS 'ConnectedOn_643',TDCertSSYSSSCCC.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertSSYSSSCCC.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN THSystem ON ConTHProject.[ChildTable] = 'THSystem' and ConTHProject.[Child_ID] = THSystem.ID  INNER JOIN ConTHSystem ON ConTHSystem.[ParentTable] = 'THSystem' and ConTHSystem.[Parent_ID] = THSystem.ID  INNER JOIN THSubSystem ON ConTHSystem.[ChildTable] = 'THSubSystem' and ConTHSystem.[Child_ID] = THSubSystem.ID  INNER JOIN ConTHSubSystem ON ConTHSubSystem.[ParentTable] = 'THSubSystem' and ConTHSubSystem.[Parent_ID] = THSubSystem.ID  INNER JOIN TDCertSSYSSSCCC ON ConTHSubSystem.[ChildTable] = 'TDCertSSYSSSCCC' and ConTHSubSystem.[Child_ID] = TDCertSSYSSSCCC.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertSSYSSSCCC] ON TTS_TDCertSSYSSSCCC.[StatusCode] = TDCertSSYSSSCCC.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertSSYSSSCCC.[TTable_ID] = 583 AND  TT1.[TableName] = 'TDCertSSYSSSCCC'  AND TDCertSSYSSSCCC.[ProjectID] IN ('SCOM') UNION ALL SELECT TDCertSSYSSSHOC.[CertificateNo] AS 'KEYFIELD_635',TDCertSSYSSSHOC.[CertificateDescription] AS 'DESCFIELD_636',TDCertSSYSSSHOC.[SystemNo] AS 'SystemNo_637',TDCertSSYSSSHOC.[SystemDescription] AS 'SystemDescription_638',TDCertSSYSSSHOC.[SubSystemNo] AS 'SubSystemNo_639',TDCertSSYSSSHOC.[SubSystemDescription] AS 'SubSystemDescription_640',TDCertSSYSSSHOC.[Discipline] AS 'Discipline_641',TTS_TDCertSSYSSSHOC.[Description] AS 'STATUSFIELD_794',CONTHSubSystem.[ConnectedOn] AS 'ConnectedOn_643',TDCertSSYSSSHOC.[LastUpdatedDate] AS 'LastUpdatedDate_644',TT1.[TableName] AS 'TABLENAME_645',THProject.[ProjectID] AS 'ProjectID_634',TDCertSSYSSSHOC.[ProjectID] AS 'ProjectID_646' FROM THProject INNER JOIN ConTHProject ON ConTHProject.[ParentTable] = 'THProject' and ConTHProject.[Parent_ID] = THProject.ID  INNER JOIN THSystem ON ConTHProject.[ChildTable] = 'THSystem' and ConTHProject.[Child_ID] = THSystem.ID  INNER JOIN ConTHSystem ON ConTHSystem.[ParentTable] = 'THSystem' and ConTHSystem.[Parent_ID] = THSystem.ID  INNER JOIN THSubSystem ON ConTHSystem.[ChildTable] = 'THSubSystem' and ConTHSystem.[Child_ID] = THSubSystem.ID  INNER JOIN ConTHSubSystem ON ConTHSubSystem.[ParentTable] = 'THSubSystem' and ConTHSubSystem.[Parent_ID] = THSubSystem.ID  INNER JOIN TDCertSSYSSSHOC ON ConTHSubSystem.[ChildTable] = 'TDCertSSYSSSHOC' and ConTHSubSystem.[Child_ID] = TDCertSSYSSSHOC.ID  LEFT OUTER JOIN TTableStatus [TTS_TDCertSSYSSSHOC] ON TTS_TDCertSSYSSSHOC.[StatusCode] = TDCertSSYSSSHOC.Status ,TTable TT1  WHERE THProject.[ProjectRefID] IN ('SCOM') AND THProject.[ID] = 1 AND  TTS_TDCertSSYSSSHOC.[TTable_ID] = 585 AND  TT1.[TableName] = 'TDCertSSYSSSHOC'  AND TDCertSSYSSSHOC.[ProjectID] IN ('SCOM')
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="tfReportIndexID"
+
+37
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="tfHiddenSID"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="tfParamFilter"
+
+{"RootTable":"THProject","KeyField":"SCOM","DescField":"JTB","TF|90|Leaf|ProjectID|Table|THProject":["SCOM"],"TF|106|Item|STATUSFIELD|TableStatus|TTableStatus":[],"MultipleType":"item","TFItemList":"SCOM","TFItemDescription":"SCOM - JTB"}
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="CBGPStatusIndexExport"
+
+XLSX
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="_CBGPStatusIndexExport_state"
+
+[{"value":"xlsx","text":"XLSX","index":2}]
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="TFTemp"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="ComboBox1"
+
+20
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="_ComboBox1_state"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="__VIEWSTATEGENERATOR"
+
+927DA6CB
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="CBStatus"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="_CBStatus_state"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="FUFStatusPDF"; filename=""
+Content-Type: application/octet-stream
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="CBQuotes"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="_CBQuotes_state"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="CBDelimiter"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="_CBDelimiter_state"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="App.RGPdfPageSize_Group"
+
+A4
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="App.RGPdfOrientation_Group"
+
+portrait
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="HFQuerySCurve1"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="App.RGSCurve_Group"
+
+7
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="HFQuerySCurve2"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="App.RGSCurve2_Group"
+
+7
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="HFQuerySCurve3"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="App.RGSCurve3_Group"
+
+7
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="MassPrintOutputFormat"
+
+.pdf
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="MassPrintOutputFormat"
+
+.pdf
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="MassPrintOutputFormat"
+
+.pdf
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="GPStatusIndexSM"
+
+
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="__EVENTTARGET"
+
+ResourceManager1
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="__EVENTARGUMENT"
+
+-|public|DMExportData
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="submitDirectEventConfig"
+
+{"config":{"extraParams":{"reportIndexId":37,"exportType":"xlsx","gridSetting":"{\"setting\":[{\"id\":\"GPRowNum\",\"hidden\":false,\"width\":50,\"dataIndex\":\"\",\"sortState\":null,\"text\":\"No\",\"format\":null},{\"id\":\"KEYFIELD_635\",\"hidden\":false,\"width\":100,\"dataIndex\":\"KEYFIELD_635\",\"sortState\":null,\"text\":\"Certificate No\",\"format\":null},{\"id\":\"DESCFIELD_636\",\"hidden\":false,\"width\":100,\"dataIndex\":\"DESCFIELD_636\",\"sortState\":null,\"text\":\"Certificate Description\",\"format\":null},{\"id\":\"SystemNo_637\",\"hidden\":false,\"width\":100,\"dataIndex\":\"SystemNo_637\",\"sortState\":null,\"text\":\"System No\",\"format\":null},{\"id\":\"SystemDescription_638\",\"hidden\":false,\"width\":100,\"dataIndex\":\"SystemDescription_638\",\"sortState\":null,\"text\":\"System Description\",\"format\":null},{\"id\":\"SubSystemNo_639\",\"hidden\":false,\"width\":100,\"dataIndex\":\"SubSystemNo_639\",\"sortState\":null,\"text\":\"Sub System No\",\"format\":null},{\"id\":\"SubSystemDescription_640\",\"hidden\":false,\"width\":100,\"dataIndex\":\"SubSystemDescription_640\",\"sortState\":null,\"text\":\"Sub System Description\",\"format\":null},{\"id\":\"Discipline_641\",\"hidden\":false,\"width\":100,\"dataIndex\":\"Discipline_641\",\"sortState\":null,\"text\":\"Discipline\",\"format\":null},{\"id\":\"STATUSFIELD_794\",\"hidden\":false,\"width\":100,\"dataIndex\":\"STATUSFIELD_794\",\"sortState\":null,\"text\":\"Status\",\"format\":null},{\"id\":\"ConnectedOn_643\",\"hidden\":false,\"width\":100,\"dataIndex\":\"ConnectedOn_643\",\"sortState\":null,\"text\":\"Connected On\",\"format\":\"d-M-Y H:i\"},{\"id\":\"LastUpdatedDate_644\",\"hidden\":false,\"width\":100,\"dataIndex\":\"LastUpdatedDate_644\",\"sortState\":null,\"text\":\"Action Date\",\"format\":null},{\"id\":\"TABLENAME_645\",\"hidden\":false,\"width\":100,\"dataIndex\":\"TABLENAME_645\",\"sortState\":null,\"text\":\"Certificate Table\",\"format\":null},{\"id\":\"ProjectID_634\",\"hidden\":false,\"width\":100,\"dataIndex\":\"ProjectID_634\",\"sortState\":null,\"text\":\"Project ID\",\"format\":null},{\"id\":\"ProjectID_646\",\"hidden\":false,\"width\":100,\"dataIndex\":\"ProjectID_646\",\"sortState\":null,\"text\":\"Project ID Target\",\"format\":null},{\"id\":\"CONID\",\"hidden\":true,\"width\":100,\"dataIndex\":\"CONID\",\"sortState\":null,\"text\":\"CONID\",\"format\":null},{\"id\":\"CONPARENTTABLE\",\"hidden\":true,\"width\":100,\"dataIndex\":\"CONPARENTTABLE\",\"sortState\":null,\"text\":\"CONPARENTTABLE\",\"format\":null},{\"id\":\"CONCHILDTABLE\",\"hidden\":true,\"width\":100,\"dataIndex\":\"CONCHILDTABLE\",\"sortState\":null,\"text\":\"CONCHILDTABLE\",\"format\":null}],\"filter\":[]}","fileName":"Status Index Report"}}}
+------WebKitFormBoundarySN1bzaG7K1GnzRP0
+Content-Disposition: form-data; name="__ExtNetDirectEventMarker"
+
+delta=true
+------WebKitFormBoundarySN1bzaG7K1GnzRP0--
