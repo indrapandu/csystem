@@ -8,7 +8,7 @@ function main(workbook: ExcelScript.Workbook) {
   var fnd = tbl.getRange().getColumn(1).find(PartNum, { completeMatch: true, matchCase: false })
   var j = 0
   if (fnd != null) {
-    fnd.getOffsetRange(0,2).setValue(OnHand)
+    fnd.getOffsetRange(0,21).setValue(OnHand)
     workbook.getActiveWorksheet().getRange('C3').clear(ExcelScript.ClearApplyTo.contents)
     workbook.getActiveWorksheet().getRange('C4').clear(ExcelScript.ClearApplyTo.contents)
     workbook.getActiveWorksheet().getRange('C2').setValue(PartNum + ' of Qty: ' + OnHand + ' filled')
@@ -25,7 +25,7 @@ function main(workbook: ExcelScript.Workbook) {
           tbl.addRow()
           tbl.getRange().getLastRow().getColumn(1).setValue(PartNum)
           tbl.getRange().getLastRow().getColumn(2).setValue("'" + workbook.getActiveWorksheet().getRange('C1').getValue())
-          tbl.getRange().getLastRow().getColumn(3).setValue(OnHand)
+          tbl.getRange().getLastRow().getColumn(22).setValue(OnHand)
           tbl.getRange().getLastRow().getColumn(10).setValue(nProd)
           workbook.getActiveWorksheet().getRange('C3').clear(ExcelScript.ClearApplyTo.contents)
           workbook.getActiveWorksheet().getRange('C4').clear(ExcelScript.ClearApplyTo.contents)
