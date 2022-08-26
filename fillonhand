@@ -1,0 +1,39 @@
+function main(workbook: ExcelScript.Workbook) {
+  var shNames = ['CHI','GBO','ATL']
+  workbook.getActiveWorksheet().getRange('C2').clear(ExcelScript.ClearApplyTo.contents)
+  let PartNum = workbook.getActiveWorksheet().getRange('C3').getValue()
+  let OnHand = workbook.getActiveWorksheet().getRange('C4').getValue()
+  if(PartNum ==''){return}
+  let tbl = workbook.getActiveWorksheet().getTables()[0]
+  var fnd = tbl.getRange().getColumn(1).find(PartNum, { completeMatch: true, matchCase: false })
+  var j = 0
+  if (fnd != null) {
+    fnd.getOffsetRange(0,2).setValue(OnHand)
+    workbook.getActiveWorksheet().getRange('C3').clear(ExcelScript.ClearApplyTo.contents)
+    workbook.getActiveWorksheet().getRange('C4').clear(ExcelScript.ClearApplyTo.contents)
+    workbook.getActiveWorksheet().getRange('C2').setValue(PartNum + ' of Qty: ' + OnHand + ' filled')
+    return
+  } else{ 
+    for (let shName of shNames){
+      j=j+1
+      if(shName!= workbook.getActiveWorksheet().getName()){
+        var tblx = workbook.getWorksheet(shName).getTables()[0];
+        var fndx = tblx.getRange().getColumn(1).find(PartNum,{completeMatch: true, matchCase:false})
+        var nProd = fndx.getOffsetRange(0, 9).getValue()
+        if(fndx != null){
+          console.log(nProd)
+          tbl.addRow()
+          tbl.getRange().getLastRow().getColumn(1).setValue(PartNum)
+          tbl.getRange().getLastRow().getColumn(2).setValue("'" + workbook.getActiveWorksheet().getRange('C1').getValue())
+          tbl.getRange().getLastRow().getColumn(3).setValue(OnHand)
+          tbl.getRange().getLastRow().getColumn(10).setValue(nProd)
+          workbook.getActiveWorksheet().getRange('C3').clear(ExcelScript.ClearApplyTo.contents)
+          workbook.getActiveWorksheet().getRange('C4').clear(ExcelScript.ClearApplyTo.contents)
+          workbook.getActiveWorksheet().getRange('C2').setValue(PartNum + ' has been found in ' + shName + ' and is being added and filled with Qty: ' + OnHand)
+          return      
+        }
+      }
+    }
+  }
+  workbook.getActiveWorksheet().getRange('C2').setValue('Not found')
+}
